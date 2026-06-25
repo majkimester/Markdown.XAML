@@ -33,7 +33,7 @@ namespace Markdown.Demo
                     Resources.MergedDictionaries.Add(resources);
                 }
             }
-            catch (Exception ex)
+            catch (IOException ex)
             {
               MessageBox.Show($"Unable to load styles file '{stylesFile}'.\n{ex.Message}");
             }

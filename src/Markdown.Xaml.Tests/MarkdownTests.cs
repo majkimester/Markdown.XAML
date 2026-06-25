@@ -16,6 +16,7 @@ namespace Markdown.Xaml.Tests
 {
     [TestFixture]
     [UseReporter(typeof(DiffReporter))]
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Naming", "CA1707:Identifiers should not contain underscores", Justification = "<Pending>")]
     public class MarkdownTests
     {
         [Test]
@@ -261,11 +262,11 @@ namespace Markdown.Xaml.Tests
             }
         }
 
-        private Markdown GetMarkdown()
+        private MarkdownRenderer GetMarkdown()
         {
             // Create light, empty dummy styles containing only their TargetType 
             // to act as trace identifiers (Id) during evaluation.
-            return new Markdown
+            return new MarkdownRenderer
             {
                 // Document and text block styles
                 DocumentStyle = new Style(typeof(FlowDocument)) { Resources = { { "Id", "DocumentStyle" } } },

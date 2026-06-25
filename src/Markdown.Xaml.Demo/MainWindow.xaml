@@ -10,7 +10,7 @@
         Loaded="Window_Loaded_1">
     <Window.Resources>
 
-        <local:Markdown x:Key="Markdown"
+        <local:MarkdownRenderer x:Key="Markdown"
                         DocumentStyle="{StaticResource DocumentStyle}"
                         BlockQuoteStyle="{StaticResource BlockQuoteStyle}"
                         CodeBlockStyle="{StaticResource CodeBlockStyle}"

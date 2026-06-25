@@ -13,11 +13,10 @@ using System.Windows.Input;
 using System.Windows.Markup;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Markdown.Xaml
 {
-    public class Markdown : DependencyObject
+    public class MarkdownRenderer : DependencyObject
     {
         /// <summary>
         /// maximum nested depth of [] and () supported by the transform; implementation detail
@@ -44,7 +43,7 @@ namespace Markdown.Xaml
 
         // Using a DependencyProperty as the backing store for DocumentStyle.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty DocumentStyleProperty =
-            DependencyProperty.Register("DocumentStyle", typeof(Style), typeof(Markdown), new PropertyMetadata(null));
+            DependencyProperty.Register("DocumentStyle", typeof(Style), typeof(MarkdownRenderer), new PropertyMetadata(null));
 
         public Style NormalParagraphStyle
         {
@@ -54,7 +53,7 @@ namespace Markdown.Xaml
 
         // Using a DependencyProperty as the backing store for NormalParagraphStyle.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty NormalParagraphStyleProperty =
-            DependencyProperty.Register("NormalParagraphStyle", typeof(Style), typeof(Markdown), new PropertyMetadata(null));
+            DependencyProperty.Register("NormalParagraphStyle", typeof(Style), typeof(MarkdownRenderer), new PropertyMetadata(null));
 
         public Style Heading1Style
         {
@@ -64,7 +63,7 @@ namespace Markdown.Xaml
 
         // Using a DependencyProperty as the backing store for Heading1Style.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty Heading1StyleProperty =
-            DependencyProperty.Register("Heading1Style", typeof(Style), typeof(Markdown), new PropertyMetadata(null));
+            DependencyProperty.Register("Heading1Style", typeof(Style), typeof(MarkdownRenderer), new PropertyMetadata(null));
 
         public Style Heading2Style
         {
@@ -74,7 +73,7 @@ namespace Markdown.Xaml
 
         // Using a DependencyProperty as the backing store for Heading2Style.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty Heading2StyleProperty =
-            DependencyProperty.Register("Heading2Style", typeof(Style), typeof(Markdown), new PropertyMetadata(null));
+            DependencyProperty.Register("Heading2Style", typeof(Style), typeof(MarkdownRenderer), new PropertyMetadata(null));
 
         public Style Heading3Style
         {
@@ -84,7 +83,7 @@ namespace Markdown.Xaml
 
         // Using a DependencyProperty as the backing store for Heading3Style.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty Heading3StyleProperty =
-            DependencyProperty.Register("Heading3Style", typeof(Style), typeof(Markdown), new PropertyMetadata(null));
+            DependencyProperty.Register("Heading3Style", typeof(Style), typeof(MarkdownRenderer), new PropertyMetadata(null));
 
         public Style Heading4Style
         {
@@ -94,7 +93,7 @@ namespace Markdown.Xaml
 
         // Using a DependencyProperty as the backing store for Heading4Style.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty Heading4StyleProperty =
-            DependencyProperty.Register("Heading4Style", typeof(Style), typeof(Markdown), new PropertyMetadata(null));
+            DependencyProperty.Register("Heading4Style", typeof(Style), typeof(MarkdownRenderer), new PropertyMetadata(null));
 
         public Style Heading5Style
         {
@@ -104,7 +103,7 @@ namespace Markdown.Xaml
 
         // Using a DependencyProperty as the backing store for Heading5Style.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty Heading5StyleProperty =
-            DependencyProperty.Register("Heading5Style", typeof(Style), typeof(Markdown), new PropertyMetadata(null));
+            DependencyProperty.Register("Heading5Style", typeof(Style), typeof(MarkdownRenderer), new PropertyMetadata(null));
 
         public Style Heading6Style
         {
@@ -114,7 +113,7 @@ namespace Markdown.Xaml
 
         // Using a DependencyProperty as the backing store for Heading6Style.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty Heading6StyleProperty =
-            DependencyProperty.Register("Heading6Style", typeof(Style), typeof(Markdown), new PropertyMetadata(null));
+            DependencyProperty.Register("Heading6Style", typeof(Style), typeof(MarkdownRenderer), new PropertyMetadata(null));
 
         public Style BlockQuoteStyle
         {
@@ -124,7 +123,7 @@ namespace Markdown.Xaml
 
         // Using a DependencyProperty as the backing store for BlockQuoteStyle.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty BlockQuoteStyleProperty =
-            DependencyProperty.Register("BlockQuoteStyle", typeof(Style), typeof(Markdown), new PropertyMetadata(null));
+            DependencyProperty.Register("BlockQuoteStyle", typeof(Style), typeof(MarkdownRenderer), new PropertyMetadata(null));
 
         public Style NoteStyle
         {
@@ -134,7 +133,7 @@ namespace Markdown.Xaml
 
         // Using a DependencyProperty as the backing store for NoteStyle.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty NoteStyleProperty =
-            DependencyProperty.Register("NoteStyle", typeof(Style), typeof(Markdown), new PropertyMetadata(null));
+            DependencyProperty.Register("NoteStyle", typeof(Style), typeof(MarkdownRenderer), new PropertyMetadata(null));
 
         public Style CodeBlockStyle
         {
@@ -144,7 +143,7 @@ namespace Markdown.Xaml
 
         // Using a DependencyProperty as the backing store for CodeBlockStyle.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty CodeBlockStyleProperty =
-            DependencyProperty.Register("CodeBlockStyle", typeof(Style), typeof(Markdown), new PropertyMetadata(null));
+            DependencyProperty.Register("CodeBlockStyle", typeof(Style), typeof(MarkdownRenderer), new PropertyMetadata(null));
 
         public Style CodeSpanStyle
         {
@@ -154,7 +153,7 @@ namespace Markdown.Xaml
 
         // Using a DependencyProperty as the backing store for CodeSpanStyle.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty CodeSpanStyleProperty =
-            DependencyProperty.Register("CodeSpanStyle", typeof(Style), typeof(Markdown), new PropertyMetadata(null));
+            DependencyProperty.Register("CodeSpanStyle", typeof(Style), typeof(MarkdownRenderer), new PropertyMetadata(null));
 
         public Style LinkStyle
         {
@@ -164,7 +163,7 @@ namespace Markdown.Xaml
 
         // Using a DependencyProperty as the backing store for LinkStyle.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty LinkStyleProperty =
-            DependencyProperty.Register("LinkStyle", typeof(Style), typeof(Markdown), new PropertyMetadata(null));
+            DependencyProperty.Register("LinkStyle", typeof(Style), typeof(MarkdownRenderer), new PropertyMetadata(null));
 
         public Style ImageStyle
         {
@@ -174,7 +173,7 @@ namespace Markdown.Xaml
 
         // Using a DependencyProperty as the backing store for ImageStyle.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty ImageStyleProperty =
-            DependencyProperty.Register("ImageStyle", typeof(Style), typeof(Markdown), new PropertyMetadata(null));
+            DependencyProperty.Register("ImageStyle", typeof(Style), typeof(MarkdownRenderer), new PropertyMetadata(null));
 
         public Style ImageFailedStyle
         {
@@ -184,7 +183,7 @@ namespace Markdown.Xaml
 
         // Using a DependencyProperty as the backing store for ImageFailedStyle.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty ImageFailedStyleProperty =
-            DependencyProperty.Register("ImageFailedStyle", typeof(Style), typeof(Markdown), new PropertyMetadata(null));
+            DependencyProperty.Register("ImageFailedStyle", typeof(Style), typeof(MarkdownRenderer), new PropertyMetadata(null));
 
         //public Style ImageDownloadFailedStyle
         //{
@@ -204,7 +203,7 @@ namespace Markdown.Xaml
 
         // Using a DependencyProperty as the backing store for SeparatorStyle.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty SeparatorStyleProperty =
-            DependencyProperty.Register("SeparatorStyle", typeof(Style), typeof(Markdown), new PropertyMetadata(null));
+            DependencyProperty.Register("SeparatorStyle", typeof(Style), typeof(MarkdownRenderer), new PropertyMetadata(null));
 
         public string AssetPathRoot
         {
@@ -214,7 +213,7 @@ namespace Markdown.Xaml
 
         // Using a DependencyProperty as the backing store for AssetPathRoot.
         public static readonly DependencyProperty AssetPathRootProperty =
-            DependencyProperty.Register("AssetPathRoot", typeof(string), typeof(Markdown), new PropertyMetadata(null));
+            DependencyProperty.Register("AssetPathRoot", typeof(string), typeof(MarkdownRenderer), new PropertyMetadata(null));
 
         public Style TableStyle
         {
@@ -224,7 +223,7 @@ namespace Markdown.Xaml
 
         // Using a DependencyProperty as the backing store for TableStyle.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty TableStyleProperty =
-            DependencyProperty.Register("TableStyle", typeof(Style), typeof(Markdown), new PropertyMetadata(null));
+            DependencyProperty.Register("TableStyle", typeof(Style), typeof(MarkdownRenderer), new PropertyMetadata(null));
 
         public Style TableHeaderStyle
         {
@@ -234,7 +233,7 @@ namespace Markdown.Xaml
 
         // Using a DependencyProperty as the backing store for TableHeaderStyle.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty TableHeaderStyleProperty =
-            DependencyProperty.Register("TableHeaderStyle", typeof(Style), typeof(Markdown), new PropertyMetadata(null));
+            DependencyProperty.Register("TableHeaderStyle", typeof(Style), typeof(MarkdownRenderer), new PropertyMetadata(null));
 
         public Style TableBodyStyle
         {
@@ -244,7 +243,7 @@ namespace Markdown.Xaml
 
         // Using a DependencyProperty as the backing store for TableBodyStyle.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty TableBodyStyleProperty =
-            DependencyProperty.Register("TableBodyStyle", typeof(Style), typeof(Markdown), new PropertyMetadata(null));
+            DependencyProperty.Register("TableBodyStyle", typeof(Style), typeof(MarkdownRenderer), new PropertyMetadata(null));
 
         public Style TableRowAltStyle
         {
@@ -254,10 +253,10 @@ namespace Markdown.Xaml
         // Using a DependencyProperty as the backing store for TableRowAltStyle.  This enables animation, styling, binding, etc...
 
         public static readonly DependencyProperty TableRowAltStyleProperty =
-            DependencyProperty.Register("TableRowAltStyle", typeof(Style), typeof(Markdown), new PropertyMetadata(null));
+            DependencyProperty.Register("TableRowAltStyle", typeof(Style), typeof(MarkdownRenderer), new PropertyMetadata(null));
         #endregion Style
 
-        public Markdown()
+        public MarkdownRenderer()
         {
             HyperlinkCommand = NavigationCommands.GoToPage;
         }
@@ -358,7 +357,7 @@ namespace Markdown.Xaml
 
         private static readonly Regex _newlinesLeadingTrailing = new Regex(@"^\n+|\n+\z", RegexOptions.Compiled);
         private static readonly Regex _newlinesMultiple = new Regex(@"\n{2,}", RegexOptions.Compiled);
-        private static readonly Regex _leadingWhitespace = new Regex(@"^[ ]*", RegexOptions.Compiled);
+        //private static readonly Regex _leadingWhitespace = new Regex(@"^[ ]*", RegexOptions.Compiled);
         private const string _alignment = @"^\|-\||^\|:-\||^\|-:\||^\|:-:\||^\|=\|";
 
         /// <summary>
@@ -546,10 +545,11 @@ namespace Markdown.Xaml
             // Bind size so document is updated when image is downloaded
             if (imgSource.IsDownloading)
             {
-                Binding binding = new Binding(nameof(BitmapImage.Width));
-                binding.Source = imgSource;
-                binding.Mode = BindingMode.OneWay;
-
+                Binding binding = new Binding(nameof(BitmapImage.Width))
+                {
+                    Source = imgSource,
+                    Mode = BindingMode.OneWay
+                };
                 BindingExpressionBase bindingExpression = BindingOperations.SetBinding(image, Image.WidthProperty, binding);
                 
                 void downloadCompletedHandler(object sender, EventArgs e)
@@ -854,6 +854,11 @@ namespace Markdown.Xaml
 
         public Border CreateBorderBlockQuotes(int level, IEnumerable<Inline> content)
         {
+            if (content is null)
+            {
+                throw new ArgumentNullException(nameof(content));
+            }
+
             if (level > 1)
             {
                 return new Border()
@@ -1337,7 +1342,7 @@ namespace Markdown.Xaml
             var header = match.Groups[2].Value.Trim();
             var style = match.Groups[4].Value.Trim();
             var row = match.Groups[6].Value.Trim();
-            var rowAlt = style.Substring(0, 1) == "=" ? true : false;
+            var rowAlt = style.Substring(0, 1) == "=";
 
             var styles = style.Substring(1 + Convert.ToInt32(rowAlt), style.Length - (2 + Convert.ToInt32(rowAlt))).Split('|');
             var headers = header.Substring(1, header.Length - 2).Split('|');

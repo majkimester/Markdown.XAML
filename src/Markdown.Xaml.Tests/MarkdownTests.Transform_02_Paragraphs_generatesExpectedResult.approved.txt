@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<FlowDocument TextAlignment="Left" Style="{StaticResource DocumentStyle}" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Paragraph TextAlignment="Left" Style="{StaticResource H1Style}">Header 1</Paragraph>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}" xml:space="preserve">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis orci erat, hendrerit et interdum at, feugiat non diam. Vestibulum id odio non elit consectetur faucibus quis a urna. </Paragraph>
+  <Paragraph TextAlignment="Left" Style="{StaticResource H2Style}">Header 2</Paragraph>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}" xml:space="preserve">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </Paragraph>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}" xml:space="preserve">Duis orci erat, hendrerit et interdum at, feugiat non diam. </Paragraph>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}" xml:space="preserve">Vestibulum id odio non elit consectetur faucibus quis a urna. </Paragraph>
+  <Paragraph TextAlignment="Left" Style="{StaticResource H1Style}">Header Level 1: Test Line Breaks</Paragraph>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Test Line Breaks<LineBreak />To create a line break or new line, end a line with two or more spaces, and then type return.</Paragraph>
+  <Paragraph TextAlignment="Left" Style="{StaticResource H2Style}">Header Level 2: Test Left alignment</Paragraph>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Paragraph>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}" xml:space="preserve">Duis orci erat, hendrerit et interdum at, feugiat non diam. </Paragraph>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}" xml:space="preserve">Vestibulum id odio non elit consectetur faucibus quis a urna. </Paragraph>
+  <Paragraph TextAlignment="Left" Style="{StaticResource H3Style}">Header Level 3: Test Right alignment</Paragraph>
+  <Paragraph TextAlignment="Right" Style="{StaticResource NormalParagraphStyle}" xml:space="preserve">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </Paragraph>
+  <Paragraph TextAlignment="Left" Style="{StaticResource H4Style}">Header Level 4: Test Center alignment</Paragraph>
+  <Paragraph TextAlignment="Center" Style="{StaticResource NormalParagraphStyle}" xml:space="preserve">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </Paragraph>
+  <Paragraph TextAlignment="Left" Style="{StaticResource H4Style}">Header Level 5: Test justify alignment</Paragraph>
+  <Paragraph TextAlignment="Justify" Style="{StaticResource NormalParagraphStyle}" xml:space="preserve">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis orci erat, hendrerit et interdum at, feugiat non diam. Vestibulum id odio non elit consectetur faucibus quis a urna. </Paragraph>
+  <Paragraph TextAlignment="Left" Style="{StaticResource H4Style}">Header Level 6</Paragraph>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}" xml:space="preserve">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis orci erat, hendrerit et interdum at, feugiat non diam. Vestibulum id odio non elit consectetur faucibus quis a urna. </Paragraph>
+</FlowDocument>

@@ -1879,9 +1879,7 @@ namespace Markdown.Xaml
         }
     }
 
-
-
-    class Strikethrough : Span
+    public class Strikethrough : Span
     {
         public Strikethrough()
         {

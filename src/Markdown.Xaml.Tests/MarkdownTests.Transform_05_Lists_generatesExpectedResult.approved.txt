@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<FlowDocument TextAlignment="Left" Style="{StaticResource DocumentStyle}" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">First we have a simple numeric list</Paragraph>
+  <List MarkerStyle="Decimal">
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Alpha</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Beta</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Gamma</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Delta</Paragraph>
+    </ListItem>
+  </List>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Then we have a simple unordered list</Paragraph>
+  <List MarkerStyle="Disc">
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Han</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Leia</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Luke</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Obiwan</Paragraph>
+    </ListItem>
+  </List>
+  <Paragraph TextAlignment="Left" Style="{StaticResource H2Style}">Unordered</Paragraph>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Asterisks tight:</Paragraph>
+  <List MarkerStyle="Disc">
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">asterisk 1</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">asterisk 2</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">asterisk 3</Paragraph>
+    </ListItem>
+  </List>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Asterisks loose:</Paragraph>
+  <List MarkerStyle="Disc">
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">asterisk 1</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">asterisk 2</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">asterisk 3</Paragraph>
+    </ListItem>
+  </List>
+  <BlockUIContainer>
+    <StackPanel>
+      <Separator Style="{StaticResource SeparatorStyle}" Margin="0,0,0,0" />
+      <Separator Style="{StaticResource SeparatorStyle}" Margin="0,0,0,0" />
+    </StackPanel>
+  </BlockUIContainer>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Pluses tight:</Paragraph>
+  <List MarkerStyle="Box">
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Plus 1</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Plus 2</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Plus 3</Paragraph>
+    </ListItem>
+  </List>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Pluses loose:</Paragraph>
+  <List MarkerStyle="Box">
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Plus 1</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Plus 2</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Plus 3</Paragraph>
+    </ListItem>
+  </List>
+  <BlockUIContainer>
+    <StackPanel>
+      <Separator Style="{StaticResource SeparatorStyle}" Margin="0,0,0,0" />
+      <Separator Style="{StaticResource SeparatorStyle}" Margin="0,0,0,0" />
+    </StackPanel>
+  </BlockUIContainer>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Minuses tight:</Paragraph>
+  <List MarkerStyle="Circle">
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Minus 1</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Minus 2</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Minus 3</Paragraph>
+    </ListItem>
+  </List>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Minuses loose:</Paragraph>
+  <List MarkerStyle="Circle">
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Minus 1</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Minus 2</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Minus 3</Paragraph>
+    </ListItem>
+  </List>
+  <Paragraph TextAlignment="Left" Style="{StaticResource H2Style}">Ordered</Paragraph>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Tight:</Paragraph>
+  <List MarkerStyle="Decimal">
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">First</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Second</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Third</Paragraph>
+    </ListItem>
+  </List>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">and:</Paragraph>
+  <List MarkerStyle="Decimal">
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">One</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Two</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Three</Paragraph>
+    </ListItem>
+  </List>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Loose using tabs:</Paragraph>
+  <List MarkerStyle="Decimal">
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">First</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Second</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Third</Paragraph>
+    </ListItem>
+  </List>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">and using spaces:</Paragraph>
+  <List MarkerStyle="Decimal">
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">One</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Two</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Three</Paragraph>
+    </ListItem>
+  </List>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Multiple paragraphs:</Paragraph>
+  <List MarkerStyle="Decimal">
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Item 1, graf one.</Paragraph>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}" xml:space="preserve"> Item 2. graf two. The quick brown fox jumped over the lazy dog's back.</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Item 2.</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Item 3.</Paragraph>
+    </ListItem>
+  </List>
+  <Paragraph TextAlignment="Left" Style="{StaticResource H2Style}">Nested</Paragraph>
+  <List MarkerStyle="Disc">
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Tab</Paragraph>
+      <List MarkerStyle="Disc">
+        <ListItem>
+          <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Tab * Tab</Paragraph>
+        </ListItem>
+      </List>
+    </ListItem>
+  </List>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Here's another:</Paragraph>
+  <List MarkerStyle="Decimal">
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">First</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Second:</Paragraph>
+      <List MarkerStyle="Disc">
+        <ListItem>
+          <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Fee</Paragraph>
+        </ListItem>
+        <ListItem>
+          <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Fie</Paragraph>
+        </ListItem>
+        <ListItem>
+          <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Foe</Paragraph>
+        </ListItem>
+      </List>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Third</Paragraph>
+    </ListItem>
+  </List>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Same thing but with paragraphs:</Paragraph>
+  <List MarkerStyle="Decimal">
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">First</Paragraph>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Second:</Paragraph>
+      <List MarkerStyle="Disc">
+        <ListItem>
+          <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Fee</Paragraph>
+        </ListItem>
+        <ListItem>
+          <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Fie</Paragraph>
+        </ListItem>
+        <ListItem>
+          <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Foe</Paragraph>
+        </ListItem>
+      </List>
+    </ListItem>
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">Third</Paragraph>
+    </ListItem>
+  </List>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">This was an error in Markdown 1.0.1:</Paragraph>
+  <List MarkerStyle="Disc">
+    <ListItem>
+      <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">this</Paragraph>
+      <List MarkerStyle="Disc">
+        <ListItem>
+          <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}">sub</Paragraph>
+          <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}" xml:space="preserve"> that</Paragraph>
+        </ListItem>
+      </List>
+    </ListItem>
+  </List>
+</FlowDocument>

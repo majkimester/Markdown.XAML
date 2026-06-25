@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<FlowDocument TextAlignment="Left" Style="{StaticResource DocumentStyle}" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <BlockUIContainer>
+    <Border BorderThickness="2,0,0,0" Padding="10,0,0,0" BorderBrush="#FFC0C0C0">
+      <RichTextBox>
+        <RichTextBox.Style>
+          <Style TargetType="RichTextBox">
+            <Style.Resources>
+              <s:String x:Key="Id">BlockQuoteStyle</s:String>
+            </Style.Resources>
+          </Style>
+        </RichTextBox.Style>
+        <FlowDocument AllowDrop="True">
+          <Paragraph>Quote 1</Paragraph>
+        </FlowDocument>
+      </RichTextBox>
+    </Border>
+  </BlockUIContainer>
+  <BlockUIContainer>
+    <Border BorderThickness="2,0,0,0" Padding="10,0,0,0" BorderBrush="#FFC0C0C0">
+      <Border BorderThickness="2,0,0,0" Padding="10,0,0,0" BorderBrush="#FFC0C0C0">
+        <RichTextBox>
+          <RichTextBox.Style>
+            <Style TargetType="RichTextBox">
+              <Style.Resources>
+                <s:String x:Key="Id">BlockQuoteStyle</s:String>
+              </Style.Resources>
+            </Style>
+          </RichTextBox.Style>
+          <FlowDocument AllowDrop="True">
+            <Paragraph>Quote 2a</Paragraph>
+          </FlowDocument>
+        </RichTextBox>
+      </Border>
+    </Border>
+  </BlockUIContainer>
+  <BlockUIContainer>
+    <Border BorderThickness="2,0,0,0" Padding="10,0,0,0" BorderBrush="#FFC0C0C0">
+      <Border BorderThickness="2,0,0,0" Padding="10,0,0,0" BorderBrush="#FFC0C0C0">
+        <RichTextBox>
+          <RichTextBox.Style>
+            <Style TargetType="RichTextBox">
+              <Style.Resources>
+                <s:String x:Key="Id">BlockQuoteStyle</s:String>
+              </Style.Resources>
+            </Style>
+          </RichTextBox.Style>
+          <FlowDocument AllowDrop="True">
+            <Paragraph>Quote 2b</Paragraph>
+          </FlowDocument>
+        </RichTextBox>
+      </Border>
+    </Border>
+  </BlockUIContainer>
+  <BlockUIContainer>
+    <Border BorderThickness="2,0,0,0" Padding="10,0,0,0" BorderBrush="#FFC0C0C0">
+      <Border BorderThickness="2,0,0,0" Padding="10,0,0,0" BorderBrush="#FFC0C0C0">
+        <Border BorderThickness="2,0,0,0" Padding="10,0,0,0" BorderBrush="#FFC0C0C0">
+          <RichTextBox>
+            <RichTextBox.Style>
+              <Style TargetType="RichTextBox">
+                <Style.Resources>
+                  <s:String x:Key="Id">BlockQuoteStyle</s:String>
+                </Style.Resources>
+              </Style>
+            </RichTextBox.Style>
+            <FlowDocument AllowDrop="True">
+              <Paragraph>Quote 3</Paragraph>
+            </FlowDocument>
+          </RichTextBox>
+        </Border>
+      </Border>
+    </Border>
+  </BlockUIContainer>
+  <BlockUIContainer>
+    <Border BorderThickness="2,0,0,0" Padding="10,0,0,0" BorderBrush="#FFC0C0C0">
+      <Border BorderThickness="2,0,0,0" Padding="10,0,0,0" BorderBrush="#FFC0C0C0">
+        <Border BorderThickness="2,0,0,0" Padding="10,0,0,0" BorderBrush="#FFC0C0C0">
+          <Border BorderThickness="2,0,0,0" Padding="10,0,0,0" BorderBrush="#FFC0C0C0">
+            <RichTextBox>
+              <RichTextBox.Style>
+                <Style TargetType="RichTextBox">
+                  <Style.Resources>
+                    <s:String x:Key="Id">BlockQuoteStyle</s:String>
+                  </Style.Resources>
+                </Style>
+              </RichTextBox.Style>
+              <FlowDocument AllowDrop="True">
+                <Paragraph>Quote 4 lorem ipsum</Paragraph>
+              </FlowDocument>
+            </RichTextBox>
+          </Border>
+        </Border>
+      </Border>
+    </Border>
+  </BlockUIContainer>
+  <BlockUIContainer>
+    <Border BorderThickness="2,0,0,0" Padding="10,0,0,0" BorderBrush="#FFC0C0C0">
+      <Border BorderThickness="2,0,0,0" Padding="10,0,0,0" BorderBrush="#FFC0C0C0">
+        <Border BorderThickness="2,0,0,0" Padding="10,0,0,0" BorderBrush="#FFC0C0C0">
+          <Border BorderThickness="2,0,0,0" Padding="10,0,0,0" BorderBrush="#FFC0C0C0">
+            <Border BorderThickness="2,0,0,0" Padding="10,0,0,0" BorderBrush="#FFC0C0C0">
+              <Border BorderThickness="2,0,0,0" Padding="10,0,0,0" BorderBrush="#FFC0C0C0">
+                <Border BorderThickness="2,0,0,0" Padding="10,0,0,0" BorderBrush="#FFC0C0C0">
+                  <Border BorderThickness="2,0,0,0" Padding="10,0,0,0" BorderBrush="#FFC0C0C0">
+                    <Border BorderThickness="2,0,0,0" Padding="10,0,0,0" BorderBrush="#FFC0C0C0">
+                      <RichTextBox>
+                        <RichTextBox.Style>
+                          <Style TargetType="RichTextBox">
+                            <Style.Resources>
+                              <s:String x:Key="Id">BlockQuoteStyle</s:String>
+                            </Style.Resources>
+                          </Style>
+                        </RichTextBox.Style>
+                        <FlowDocument AllowDrop="True">
+                          <Paragraph>Up to 9</Paragraph>
+                        </FlowDocument>
+                      </RichTextBox>
+                    </Border>
+                  </Border>
+                </Border>
+              </Border>
+            </Border>
+          </Border>
+        </Border>
+      </Border>
+    </Border>
+  </BlockUIContainer>
+</FlowDocument>

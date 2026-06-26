@@ -3,7 +3,8 @@
 
     <!-- Document Style -->
     <Style x:Key="DocumentStyle" TargetType="FlowDocument">
-        <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="FontFamily" Value="Sans-Serif" />
+        <Setter Property="FontSize" Value="16" />
     </Style>
     <!-- END Document Style -->
 
@@ -14,33 +15,39 @@
     
     <!-- Heading Style -->
     <Style x:Key="HeadingStyle" TargetType="Paragraph">
-        <Setter Property="FontFamily" Value="Cambria" />
+        <Setter Property="FontFamily" Value="Sans-Serif" />
         <Setter Property="Foreground" Value="#ff000000" />
-        <Setter Property="FontWeight" Value="Light" />
+        <Setter Property="FontWeight" Value="Medium" />
     </Style>
 
     <Style x:Key="H1Style" TargetType="Paragraph" BasedOn="{StaticResource HeadingStyle}">
-        <Setter Property="FontSize" Value="42" />
+        <Setter Property="FontSize" Value="40" />
+        <Setter Property="Margin" Value="0,20,0,20" />
     </Style>
 
     <Style x:Key="H2Style" TargetType="Paragraph" BasedOn="{StaticResource HeadingStyle}">
-        <Setter Property="FontSize" Value="24" />
+        <Setter Property="FontSize" Value="32" />
+        <Setter Property="Margin" Value="0,16,0,16" />
     </Style>
 
     <Style x:Key="H3Style" TargetType="Paragraph" BasedOn="{StaticResource HeadingStyle}">
-        <Setter Property="FontSize" Value="20" />
+        <Setter Property="FontSize" Value="28" />
+        <Setter Property="Margin" Value="0,14,0,14" />
     </Style>
 
     <Style x:Key="H4Style" TargetType="Paragraph" BasedOn="{StaticResource HeadingStyle}">
-        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontSize" Value="24" />
+        <Setter Property="Margin" Value="0,12,0,12" />
     </Style>
 
     <Style x:Key="H5Style" TargetType="Paragraph" BasedOn="{StaticResource HeadingStyle}">
-        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="Margin" Value="0,10,0,10" />
     </Style>
 
     <Style x:Key="H6Style" TargetType="Paragraph" BasedOn="{StaticResource HeadingStyle}">
-        <Setter Property="FontSize" Value="12" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="Margin" Value="0,8,0,8" />
     </Style>
     <!-- END Heading Style -->
 
@@ -129,10 +136,16 @@
     <Style x:Key="BlockQuoteStyle" TargetType="RichTextBox">
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="BorderThickness" Value="0" />
-        <Setter Property="Foreground" Value="Silver" />
-        <Setter Property="Padding" Value="0, 10" />
+        <Setter Property="Padding" Value="10 16 10 16" />
     </Style>
-    <!-- END Comment Style -->
+
+    <Style x:Key="BlockQuoteBorderStyle" TargetType="Border">
+        <Setter Property="Background" Value="#fff9f9f9" />
+        <Setter Property="BorderBrush" Value="#ffc0c0c0" />
+        <Setter Property="BorderThickness" Value="10 0 0 0" />
+        <Setter Property="Margin" Value="10 0 0 0" />
+    </Style>
+    <!-- END BlockQuote Style -->
 
     <!-- Note Style -->
     <Style x:Key="NoteStyle" TargetType="Paragraph">

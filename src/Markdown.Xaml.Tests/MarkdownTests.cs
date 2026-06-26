@@ -197,8 +197,13 @@ namespace Markdown.Xaml.Tests
                     ProcessFrameworkContentElement(child);
                 }
             }
+            // Handle Border control (Traverse into its single Child element)
+            else if (element is Border border && border.Child != null)
+            {
+                ProcessFrameworkContentElement(border.Child);
+            }
             // Handle Paragraphs and structural blocks that contain inline text elements (Hyperlink, Run, etc.)
-            if (element is Paragraph p)
+            else if(element is Paragraph p)
             {
                 foreach (var inline in p.Inlines)
                 {
@@ -270,7 +275,8 @@ namespace Markdown.Xaml.Tests
             {
                 // Document and text block styles
                 DocumentStyle = new Style(typeof(FlowDocument)) { Resources = { { "Id", "DocumentStyle" } } },
-                BlockQuoteStyle = new Style(typeof(RichTextBox)) { Resources = { { "Id", "BlockQuoteStyle" } } }, // Inherits RichTextBox in the source
+                BlockQuoteStyle = new Style(typeof(RichTextBox)) { Resources = { { "Id", "BlockQuoteStyle" } } },
+                BlockQuoteBorderStyle = new Style(typeof(Border)) { Resources = { { "Id", "BlockQuoteBorderStyle" } } },
                 CodeBlockStyle = new Style(typeof(Paragraph)) { Resources = { { "Id", "CodeBlockStyle" } } },
                 NormalParagraphStyle = new Style(typeof(Paragraph)) { Resources = { { "Id", "NormalParagraphStyle" } } },
                 NoteStyle = new Style(typeof(Paragraph)) { Resources = { { "Id", "NoteStyle" } } },

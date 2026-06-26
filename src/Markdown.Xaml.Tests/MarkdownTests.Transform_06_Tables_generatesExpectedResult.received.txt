@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<FlowDocument TextAlignment="Left" Style="{StaticResource DocumentStyle}" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Table Style="{StaticResource TableStyle}">
+    <Table.Columns>
+      <TableColumn />
+    </Table.Columns>
+    <TableRowGroup Style="{StaticResource TableHeaderStyle}">
+      <TableRow >
+        <TableCell>
+          <Paragraph>firstTable</Paragraph>
+        </TableCell>
+      </TableRow>
+    </TableRowGroup>
+    <TableRowGroup Style="{StaticResource TableBodyStyle}">
+      <TableRow >
+        <TableCell>
+          <Paragraph>asdf</Paragraph>
+        </TableCell>
+      </TableRow>
+    </TableRowGroup>
+  </Table>
+  <Table Style="{StaticResource TableStyle}">
+    <Table.Columns>
+      <TableColumn />
+      <TableColumn />
+      <TableColumn />
+      <TableColumn />
+      <TableColumn />
+      <TableColumn />
+    </Table.Columns>
+    <TableRowGroup Style="{StaticResource TableHeaderStyle}">
+      <TableRow >
+        <TableCell TextAlignment="Center">
+          <Paragraph>A</Paragraph>
+        </TableCell>
+        <TableCell TextAlignment="Left">
+          <Paragraph>b</Paragraph>
+        </TableCell>
+        <TableCell TextAlignment="Right">
+          <Paragraph>C</Paragraph>
+        </TableCell>
+        <TableCell>
+          <Paragraph>d</Paragraph>
+        </TableCell>
+        <TableCell>
+          <Paragraph>E</Paragraph>
+        </TableCell>
+        <TableCell>
+          <Paragraph>f</Paragraph>
+        </TableCell>
+      </TableRow>
+    </TableRowGroup>
+    <TableRowGroup Style="{StaticResource TableBodyStyle}">
+      <TableRow >
+        <TableCell TextAlignment="Center">
+          <Paragraph>one</Paragraph>
+        </TableCell>
+        <TableCell TextAlignment="Left">
+          <Paragraph>two</Paragraph>
+        </TableCell>
+        <TableCell TextAlignment="Right">
+          <Paragraph>three</Paragraph>
+        </TableCell>
+        <TableCell>
+          <Paragraph>for</Paragraph>
+        </TableCell>
+        <TableCell>
+          <Paragraph>five</Paragraph>
+        </TableCell>
+        <TableCell>
+          <Paragraph>six</Paragraph>
+        </TableCell>
+      </TableRow>
+    </TableRowGroup>
+  </Table>
+  <Table Style="{StaticResource TableStyle}">
+    <Table.Columns>
+      <TableColumn />
+      <TableColumn />
+      <TableColumn />
+      <TableColumn />
+      <TableColumn />
+      <TableColumn />
+    </Table.Columns>
+    <TableRowGroup Style="{StaticResource TableHeaderStyle}">
+      <TableRow >
+        <TableCell TextAlignment="Center">
+          <Paragraph>A</Paragraph>
+        </TableCell>
+        <TableCell TextAlignment="Left">
+          <Paragraph>b</Paragraph>
+        </TableCell>
+        <TableCell TextAlignment="Right">
+          <Paragraph>C</Paragraph>
+        </TableCell>
+        <TableCell>
+          <Paragraph>d</Paragraph>
+        </TableCell>
+        <TableCell>
+          <Paragraph>E</Paragraph>
+        </TableCell>
+        <TableCell>
+          <Paragraph>f</Paragraph>
+        </TableCell>
+      </TableRow>
+    </TableRowGroup>
+    <TableRowGroup Style="{StaticResource TableBodyStyle}">
+      <TableRow >
+        <TableCell TextAlignment="Center">
+          <Paragraph>one</Paragraph>
+        </TableCell>
+        <TableCell TextAlignment="Left">
+          <Paragraph>two</Paragraph>
+        </TableCell>
+        <TableCell TextAlignment="Right">
+          <Paragraph>three</Paragraph>
+        </TableCell>
+        <TableCell>
+          <Paragraph>for</Paragraph>
+        </TableCell>
+        <TableCell>
+          <Paragraph>five</Paragraph>
+        </TableCell>
+        <TableCell>
+          <Paragraph>six</Paragraph>
+        </TableCell>
+      </TableRow>
+    </TableRowGroup>
+  </Table>
+  <Paragraph TextAlignment="Left" Style="{StaticResource NormalParagraphStyle}" />
+</FlowDocument>

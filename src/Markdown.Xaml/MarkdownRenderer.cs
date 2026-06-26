@@ -125,6 +125,17 @@ namespace Markdown.Xaml
         public static readonly DependencyProperty BlockQuoteStyleProperty =
             DependencyProperty.Register("BlockQuoteStyle", typeof(Style), typeof(MarkdownRenderer), new PropertyMetadata(null));
 
+        public Style BlockQuoteBorderStyle
+        {
+            get { return (Style)GetValue(BlockQuoteBorderStyleProperty); }
+            set { SetValue(BlockQuoteBorderStyleProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for BlockQuoteBorderStyle.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty BlockQuoteBorderStyleProperty =
+            DependencyProperty.Register("BlockQuoteBorderStyle", typeof(Style), typeof(MarkdownRenderer), new PropertyMetadata(null));
+
+
         public Style NoteStyle
         {
             get { return (Style)GetValue(NoteStyleProperty); }
@@ -799,7 +810,7 @@ namespace Markdown.Xaml
         private static readonly Regex _blockquotes = new Regex(@"
                 ^(\>{1,9})  # $1 = string of >'s
                 [ ]*
-                (.+?)       # $2 = Header text
+                (.*?)       # $2 = Header text
                 [ ]*
                 \n+
             ", RegexOptions.Multiline | RegexOptions.IgnorePatternWhitespace | RegexOptions.Compiled);
@@ -842,13 +853,6 @@ namespace Markdown.Xaml
             {
                 throw new ArgumentNullException(nameof(content));
             }
-
-            //var block = Create<Paragraph, Inline>(content);
-            //block.Style = CommentStyle;
-            //block.TextAlignment = textAlignment;
-
-            //return block;
-
             return new BlockUIContainer(CreateBorderBlockQuotes(level, content));
         }
 
@@ -863,29 +867,20 @@ namespace Markdown.Xaml
             {
                 return new Border()
                 {
-                    BorderBrush = Brushes.Silver,
-                    BorderThickness = new Thickness(2, 0, 0, 0),
+                    Style = BlockQuoteBorderStyle,
                     Child = CreateBorderBlockQuotes(level - 1, content),
-                    Padding = new Thickness(10, 0, 0, 0)
                 };
             }
             else
             {
-                var commentFDoc = new FlowDocument(Create<Paragraph, Inline>(content));
-                //{
-                //    Style = DocumentStyle,
-                //    TextAlignment = defaultTextAlignment
-                //};
-
+                var blockquoteFDoc = new FlowDocument(Create<Paragraph, Inline>(content));
                 return new Border()
                 {
-                    BorderBrush = Brushes.Silver,
-                    BorderThickness = new Thickness(2, 0, 0, 0),
-                    Child = new RichTextBox(commentFDoc)
+                    Style = BlockQuoteBorderStyle,
+                    Child = new RichTextBox(blockquoteFDoc)
                     {
                         Style = BlockQuoteStyle
                     },
-                    Padding = new Thickness(10, 0, 0, 0)
                 };
             }
         }
